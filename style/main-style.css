@@ -1,0 +1,986 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Satisfy&display=swap');
+/* font-family: 'Cardo', serif;
+font-family: 'Satisfy', cursive; */
+
+#wpbtn {
+    z-index: 20000;
+    color: white;
+    background-color: #26D367;
+    position: fixed;
+    font-size: 2.5rem;
+    padding: 18px;
+    clip-path: circle(40%);
+    bottom: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* #main{
+    background-color: #000;
+} */
+/* 
+.section1 {
+    background-image: url(../img/RMP_8852.JPG);
+    width: 100%;
+    background-size: cover;
+    height: 90vh;
+    background-position: center;
+} */
+
+header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    transition: 500ms;
+    z-index: 10000;
+    /* background: black; */
+}
+
+
+/* ------header------ */
+
+
+nav{
+    margin-right: 70px;
+    
+}
+
+nav a{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: poppins;
+    color: #7b1e1e;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    padding: 10px 5px;
+    transition: 500ms;
+    font-weight: bold;
+}
+
+.active {
+    border-color: #7b1e1e;
+    color: #7b1e1e;
+}
+
+nav a:hover{
+    border-color: #7b1e1e;
+    color: white;
+}
+
+.logo {
+    flex: 1;
+    margin-left: 70px;
+}
+
+.logo img {
+    width: 30%;
+}
+
+.bgc {
+    background: #f8c7f1;
+    padding: 10px;
+    /* box-shadow: 0px 1px 5px ; */
+    box-shadow: 0px 2px 9px rgba(140, 130, 130, 0.7) ;
+}
+
+.bgc .logo{
+    font-size: 30px;
+    color: #000;
+}   
+
+.bgc nav a{
+    color: #7b1e1e;
+    font-weight: bold;
+}
+
+.bgc nav a:hover{
+    color: white;
+    
+}
+
+
+/* mobile header */
+
+#menu{
+    z-index: 1000;
+    display: none;
+}
+
+/* 
+#menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 5px;
+    background-color: #dc052d;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease all;
+}
+
+#bar1{
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav {
+    transition: 0.3s ease;
+    display: none;
+}
+
+.nav ul {
+    padding: 0 22px;
+    background-color: yellowgreen;
+}
+
+.nav li {
+    list-style: none;
+    padding: 12px 0;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav li a:hover{
+    font-weight: bold;
+}
+
+.menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #dc052d, #dc052d);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.change {
+    display: block;
+}
+
+.change .bar {
+    background-color: white;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%, -30%);
+} */
+
+
+
+
+/* ---------slider---------- */
+
+.heroimg{
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(50, 19, 93, 0.73)), url("../img/bg.jpg") no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    /* filter: brightness(20%); */
+    width: 100%;
+    height: 725px !important;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -5;
+}
+
+.heroimg img{
+    position: absolute;
+    width: 40%;
+    -webkit-width: 40%;
+    z-index: 40;
+    -webkit-left: 50%;
+    left: 50%;
+    -webkit-top: -18% !important;
+    top: -12%;
+    -webkit-animation: card-shift 12s ease-in-out infinite;
+    animation: card-shift 12s ease-in-out infinite;
+}
+
+@keyframes card-shift {
+    0% {
+     -webkit-transform:translate3d(-20px,0,0);
+     transform:translate3d(-20px,0,0)
+    }
+    25% {
+     -webkit-transform:translate3d(0,-0px,30);
+     transform:translate3d(0,-0px,30)
+    }
+   50% {
+     -webkit-transform:translate3d(0,-0px,0);
+     transform:translate3d(0,-0px,0)
+    }
+    75% {
+     -webkit-transform:translate3d(-20px,0,0);
+     transform:translate3d(-20px,0,0)
+    }
+    to {
+     -webkit-transform:translate3d(-10px,0,0);
+     transform:translate3d(-10px,0,0)
+    }
+}
+
+.heroimg h1{
+    position: absolute;
+    font-size: 10rem;
+    font-weight: 900;
+    top: 75%;
+    left: 5%;
+    letter-spacing: 20px;
+    z-index: 1;
+    opacity: 0.05;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    -webkit-animation: heroteaxt 12s ease-in-out infinite;
+    animation: herotext 12s ease-in-out infinite;
+}
+
+
+@keyframes herotext {
+0% {
+ -webkit-transform:translate3d(20px,20,0);
+ transform:translate3d(20px,0,0)
+}
+25% {
+ -webkit-transform:translate3d(0,0px,30);
+ transform:translate3d(0,0px,30)
+}
+50% {
+ -webkit-transform:translate3d(0,5px,0);
+ transform:translate3d(0,5px,0)
+}
+75% {
+ -webkit-transform:translate3d(20px,0,0);
+ transform:translate3d(20px,0,0)
+}
+to {
+ -webkit-transform:translate3d(-10px,0,0);
+ transform:translate3d(-10px,0,0)
+}
+}
+  
+.heroimg .text{
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 13%;
+}
+
+.heroimg .text h2{
+    font-size: 8vw;
+    letter-spacing: 5px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 500;
+}
+
+.heroimg .text h3{
+    font-size: 4vw;
+    letter-spacing: 5px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.heroimg .text p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2vw;
+}
+
+.heroimg .text button {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 10%;
+}
+.heroimg .text button:hover{
+    border: 1px solid white;
+    background-color: #7b1e1e;
+    color: white;
+}
+.heroimg .text button a {
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+
+
+/* ------slder------ */
+
+
+
+/* -------welcome------- */
+#welcome {
+    z-index: 50;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 0%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(140, 130, 130, 0.963) inset;
+}
+
+#welcome h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5%;
+    color: #7b1e1e;
+    padding: 30px;
+    font-family: Poppins;
+    line-height: 50px;
+}
+
+#welcome p{
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    text-align: justify;
+    font-size: 1.2rem;
+    color: gray;
+    padding: 20px;
+    text-indent: 50px;
+    line-height: 25px;
+}
+
+#welcome button {
+    background-color: white;
+    border: 2px solid #7b1e1e;
+    padding: 10px 20px;
+    color: #7b1e1e;
+    font-size: 1rem !important;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#welcome button:hover{
+    background-color: #7b1e1e;
+    color: white
+}
+/*-------welcome section end------*/
+
+
+
+/*-----------------About us---------------------*/
+
+#aboutus{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 3%;
+    /* background-color: #7c2e2e; */
+    display: flex;
+}
+
+.about1 {
+    width: 50%;
+    height: 80vh;
+}
+
+.owner1 {
+    width: 50%;
+}
+
+/* owner img */
+.about1 .owner1 img {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    border-radius: 50px 50px 0px 50px; 
+    border: 1px solid #7c2e2e;
+}
+
+.about1 .owner2 {
+    margin-left: 50%;
+    margin-top: -50%;
+}
+
+.about1 .owner2 img {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    margin-left: 5%;
+    border-radius: 0px 50px 50px 50px;
+    border: 1px solid #7b1e1e;
+}
+
+.about1 h3 {
+    font-family: poppins;
+    color: #7b1e1e;
+    text-align: center !important;
+    font-size: 20px !important;
+    padding: 10px 0;
+}
+
+/* about detail */
+
+.about2 {
+    width: 50%;
+    height: 80vh;
+    background-color: #ece7e7;
+    z-index: -10;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.about2 h1 {
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    padding: 20px;
+    font-size: 4rem;
+    font-weight: 100;
+    color: #7c2e2e;
+    margin-top: 5%;
+}
+
+
+
+.about2 p {
+    text-align: justify;
+    text-indent: 30px;
+    padding: 40px;
+    color: gray;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.about2 button {
+    padding: 10px 20px;
+    background-color: lightgray;
+    color: #7b1e1e;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    cursor: pointer !important;
+    z-index: 50;
+}
+/*-----------------About us End----------------*/
+
+
+
+
+
+/* ------our services------ */
+
+#ourServices{
+    width: 100%;
+    height: 100vh;
+    margin-top: 0%;
+    background: white;
+}
+/* 
+#ourServices h1 {
+    color: #7b1e1e;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Cardo', serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+} */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.section-header h2{
+    color: #7b1e1e;
+    font-size: 3rem;
+    font-family: poppins;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.section-header p{
+    font-size: 18px;
+    color: #7c2e2e;
+}
+
+.single-service {
+    border: 1px solid #7b1e1e;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.service-bg {
+    height: 200px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.service-bg-1 {
+    background: url("../img/package/bride9.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+}
+
+.service-bg-2 {
+    background: url("../img/package/bridal1\ 2.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+}
+
+.service-bg-3 {
+    background: url("../img/bhavikaben.jpg");
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+}
+
+.service-bg h2 {
+    color: white;
+    background: #7c2e2e;
+    font-family: poppins;
+    font-weight: 100;
+    border: 1px solid #7b1e1e;
+    font-size: 1.5rem;
+    padding: 8px;
+    position: absolute;
+    left: 8%;
+    width: 84%;
+    margin: 0%;
+    bottom: -25px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+
+.single-service:hover .service-bg h2 {
+    background: white;
+    transition: 0.5s;
+    color: #7b1e1e;
+}
+
+.service-text{
+    padding: 50px 30px 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.service-text p:last-child{
+    margin: 0;
+    line-height: 1.8;
+}
+
+.btn-area {
+    display: inline-block;
+    color: #7b1e1e;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 2px solid #7b1e1e;
+    border-radius: 10px;
+}
+
+.btn-area:hover{
+    background-color: #7c2e2e;
+    color: white;
+}
+/* ------our services end------ */
+
+
+
+/*-------------------massage chair------------*/
+
+#massage-chair{
+    width: 100%;
+    height: 90vh;
+    margin-top: 0%;
+    background: url(../img/Untitled\ design\ \(1\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.massage-chair-heading h1{
+    color: #7b1e1e;
+    text-align: center;
+    font-family: poppins;
+    font-size: 4rem;
+    padding: 50px 0px 0 0;
+    text-shadow: 2px 1px  #c6a2a2;
+}
+
+.massage-chair-info {
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #00000087;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.massage-chair-video video{
+    height: 70vh;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.about-massage-chair{
+    height: 70vh;
+    width: 100%;
+    color: white;
+}
+
+.about-massage-chair h2 {
+    font-size: 1.8rem;
+    padding: 50px 10px 10px 10px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+.about-massage-chair p {
+    font-size: 1rem;
+    justify-content: center;
+    padding: 10px 30px;
+}
+
+.about-massage-chair h6{
+    padding: 10px 50px;
+    line-height: 20%;
+}
+
+.massage-chair-btn {
+    background-color: transparent;
+    border: white 1px solid;
+    font-size: 12px;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+
+/*-------------------End massage chair------------*/
+
+
+
+/*--------------Price list----------------*/ 
+
+    .container h1 {
+        color: #7b1e1e;
+        text-align: center;
+        font-family: poppins;
+        font-size: 2.7rem;
+        padding: 50px 0px 0 0;
+        text-transform: uppercase;
+    }
+    .price-card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 0px 0px 20px 0px;
+      text-align: center;
+      margin: 10px;
+      border: #7b1e1e 1px solid;
+      transition: 0.5s ease all;
+    }
+    .price-card h3 {
+      margin-top: 0;
+      font-weight: 700;
+      font-family: poppins;
+      font-size: 1.5rem;
+      color: white;
+      padding: 10px;
+      border-radius: 9px 9px 0px 0px;
+      background-color: #7c2e2e;
+      width: 100%;
+      
+    }
+
+    .price-card:hover{
+        transform: scale(1.1);
+        
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+    .description {
+      color: #222121;
+      line-height: 10px;
+      margin-top: 5%;
+    }
+
+    .btn-light{
+        color: white;
+        background-color: #7c2e2e;
+        font-weight: 700;
+        font-family: poppins;
+    }
+
+    .btn-light:hover {
+        background-color: white;
+        color: #7b1e1e;
+    }
+
+/*--------------Price list end-------------*/
+
+
+/*===========gallary==================*/
+
+#gallary {
+    width: 100%;
+    height: auto;
+    background:  linear-gradient(-180deg, #7b1e1e 50%, white 50%);
+    margin-top: 5%;
+}
+
+.gallary-heading {
+    color: white;
+    padding: 20px 50px;
+
+}
+
+.gallary-heading h4 {
+    font-size: 40px;
+}
+
+.gallary-heading h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+  
+.wrapper {
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+
+.wrapper i{
+    text-align: center;
+    font-size: 30px;
+    height: 46px;
+    width: 46px;
+    line-height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 2%;
+    padding-top: 10px;
+}
+
+.wrapper .carousel{
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel .dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel .dragging img{
+    pointer-events: none;
+}
+.carousel img{
+    height: 340px;
+    width: calc(100% / 4);     /* this is for inline image make */ 
+    object-fit: cover;
+    margin-left: 14px;
+    border-radius: 5px;
+}
+
+.carousel img:first-child{
+    margin-left: 0px; 
+}
+
+
+@media screen and (max-width:900px) {
+
+    .wrapper {
+        background-color: white !important;
+    }
+    .carousel img{
+        width: calc(100% / 2);
+    }
+    .wrapper i{
+        padding-top: 20px;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .wrapper {
+        background-color: white !important;
+    }
+    .carousel img{
+        width: 100%;
+    }
+    .wrapper i{
+        padding-top: 20px;
+    }
+}
+/*===========gallary End=============*/
+
+
+/* ========= booking form=========== */
+#booking-form {
+    background: url("https://img.freepik.com/free-photo/professional-hair-supplies-flat-lay_23-2148352852.jpg?w=996&t=st=1698645061~exp=1698645661~hmac=47dc27c99d869474d5a39653c36b5454d84142f4daba16c0691879486a6c6ca7") no-repeat;
+    /* background-size: cover; */
+    background-position: bottom;
+    border-radius: 10px !important;
+}
+
+.contact-form {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center;
+}
+
+
+/* ========= booking form end=========== */
+
+
+
+/*===== brand ========= */
+
+
+
+/*------- footer------ */
+#footer {
+    width: 100%;
+    height: auto;
+    background-color: #f8c7f1;
+    text-align: center;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+
+#footer h3 {
+    font-size: 30px;
+    color: #7b1e1e;
+    text-transform: uppercase;
+}
+
+.social-icon {
+    /* padding: 20px 10px; */
+    text-align: justify;
+}
+
+.social-icon a{
+   text-decoration: none;
+   color: #3F2F2F;
+}
+
+.social-icon .fa{
+    color: #7c2e2e;
+    font-size: 25px;
+    border: 2px solid #f8c7f1;
+    border-radius: 10px;
+}
+.footer-time{
+    padding-top: 40px;
+
+}
+#footer .social-icon .fa:hover {
+    /* background-color: #ca5656; */
+    /* border: #7c2e2e 2px solid; */
+    color: lightcoral;
+    transition: 0.5s ease all;
+}
+
+.footer-service {
+    text-align: justify;
+    color: #7b1e1e;
+    font-size: 25px;
+}
+
+.footer-service h6{
+    border-bottom: 1px solid #7c2e2e7b;  
+    padding: 3px 0;
+    color: #3F2F2F;
+}
+
+.get-touch {
+    width: 20%;
+    text-align: justify;
+}
+
+.get-touch a{
+    font-size: 15px;
+    line-height: 10px;
+    color: #3F2F2F;
+}
+#footer-bottom h4{
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px !important;
+    padding: 10px;
+    font-weight: 200;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 1px;
+    background-color: #c68b8bc6
+}
+
+/* footer End */

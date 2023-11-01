@@ -1,0 +1,40 @@
+
+@media only screen and (max-width: 769px) {
+    header{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav {
+        padding: 15px;
+        margin: 0%;
+    }
+}
+
+
+/*========= footer ============ */
+#footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 70px;
+}
+
+#footer h3 {
+    font-size: 25px;
+}
+
+.social-icon .fa{
+    font-size: 23px;
+    padding: 10px 20px 20px 0px;
+}
+
+.get-touch {
+    width: 100%;
+    margin-top: 10%;
+}
+
+#footer-bottom h4{
+    font-size: 10px !important;
+}
+
+/*============== footer End ========= */

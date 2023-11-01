@@ -1,0 +1,484 @@
+@media only screen and (max-width: 390px){
+    
+
+    #wpbtn {
+        font-size: 2rem;
+        padding: 15px;
+        opacity: 90%;
+    }
+
+
+    nav {
+        display: none;
+    }
+
+header {
+    padding: 20px;
+    background-color: transparent;
+}
+#menu{
+    z-index: 10000;
+    display: block;
+}
+
+#menu-bar {
+    width: 35px;
+    height: 35px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 5px;
+    background-color: #7c2e2e;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease all;  
+}
+
+#bar1{
+    transform: translateY(-4px);
+}
+
+#bar3 {  
+    transform: translateY(4px);
+}
+
+.nav {
+    transition: 0.3s ease;
+    display: none;
+}
+
+.nav ul {
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: lightsteelblue;
+    margin: -22px 0px;
+}
+
+.nav li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #7b1e1e;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav li a:hover{
+    font-weight: bold;
+    color: white;
+}
+
+.menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg {
+    z-index: 9999;
+    width: 0;
+    height: 0;
+    margin: 30px 10px 10px 20px;
+    background: radial-gradient(circle, #7c2e2e93, #7c2e2e94);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.change {
+    display: block;
+}
+
+.change .bar {
+    background-color: lightsteelblue;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+    
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+    width: 580px;
+    height: 440px;
+    transform: translate(-60%, -30%);
+}
+
+
+.logo img {
+    width: 60%;
+    margin-left: -10%;
+    margin-top: -4%;
+}
+
+
+.bgc {
+    padding: 5px;
+}
+
+.bgc .logo{
+    margin-left: 25%;
+    margin-top: 5%;
+    padding: 5px 10px;
+}
+
+
+
+/* ------------slider---------- */
+
+.heroimg img{
+    position: absolute;
+    width: 120%;
+    z-index: 40;
+    left: 0%;
+    top: 30%;
+    -webkit-animation: card-shift 12s ease-in-out infinite;
+    animation: card-shift 12s ease-in-out infinite;
+    overflow: hidden;
+    
+}
+
+
+.heroimg h1 {
+    font-size: 3rem;
+    top: 75%;
+    left: 5%;
+    letter-spacing: 10px;
+}
+
+
+.heroimg .text {
+    margin-top: -20%;
+}
+
+.heroimg .text h2{
+    font-size: 30px !important; 
+    font-weight: 900;
+}
+.heroimg .text h3{
+    font-size: 15px !important;
+}
+
+.heroimg .text p{
+    font-size: 18px;
+}
+
+.heroimg .text button{
+    padding: 5px 20px;
+}
+
+.heroimg .text button a{
+    font-size: 14px !important;
+}
+
+/*-------slider end----------*/
+
+
+/*-------welcome section------*/
+
+#welcome {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(130, 137, 140, 0.963) inset;
+}
+
+#welcome h1 {
+    text-align: center;
+    font-size: 0.89rem;
+    margin-top: 10%;
+    color: #7b1e1e;
+    padding: 20px;
+    font-family: Poppins;
+    line-height: 22px;
+}
+
+#welcome p{
+    margin-top: 2%;
+    text-align: justify;
+    font-size: 0.8rem;
+    color: #808080;
+    padding: 10px !important;
+    text-indent: 20px;
+    line-height: 15px;
+}
+
+#welcome button {
+    background-color: white;
+    border: 1px solid #7b1e1e;
+    padding: 5px 10px;
+    color: #7b1e1e;
+    font-size: 0.5rem !important;
+    margin-bottom: 8%;
+    font-weight: 600;
+    transition: ease all 0.3s;
+    cursor: pointer;
+}
+
+#welcome button:hover{
+    background-color: #7b1e1e;
+    color: white
+}
+/*-------welcome section end------*/
+
+
+
+
+/*-----------------About us---------------------*/
+
+#aboutus{
+    /* background-color: #ece7e7; */
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    margin-top: 5%;
+}
+
+.about1 {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.owner1 {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* owner img */
+.about1 .owner1 img {
+    width: 80% !important;
+    height: auto;
+    margin-left: 10% !important;
+    padding: 10px;
+    border-radius: 0px 20px 0px 20px; 
+    margin-top: 10%;
+}
+
+.about1 .owner2 {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.about1 .owner2 img {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 20px 0px 20px 0px;
+}
+
+.about1 h3 {
+    font-family: poppins;
+    color: #7b1e1e;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* about detail */
+
+.about2 {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    margin-top: 5%;
+}
+
+.about2 h1 {
+    padding: 10px;
+    font-size: 4rem;
+    margin-top: 5%;
+}
+
+.about2 p {
+    text-align: justify;
+    text-indent: 30px;
+    padding: 20px;
+    color: gray;
+    font-size: 0.95rem;
+    line-height: 20px;
+}
+
+.about2 button {
+    background-color: lightgray;
+    padding: 5px 10px;
+    color: #7b1e1e;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*-----------------About us End----------------*/
+
+
+
+
+/* ------our services------ */
+
+#ourServices{
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+}
+
+.single-service{
+    margin-top: 35px;
+}
+
+.section-header h2{
+    font-size: 2.5rem;
+    margin-top: 5%;
+}
+
+.section-header p {
+    font-size: 0.9rem;
+}
+
+.single-service {
+    margin-top: 5%;
+}
+.service-bg h2 {
+    font-size: 18px;
+}
+
+.service-text p {
+    font-size: 14px;
+    color: #808080;
+}
+
+.btn-area {
+    border: 1px solid #7b1e1e;
+    font-size: 13px;
+}
+
+/* ------our services end------ */
+
+
+
+
+/*-------------------massage chair------------*/
+
+#massage-chair{
+    height: auto;
+    margin-top: 10%;
+}
+
+.massage-chair-heading h1{
+    font-size: 2.5rem;
+    padding: 20px 0px 0 0;
+}
+
+.massage-chair-info {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+
+.massage-chair-video video{
+    height: 50vh;
+}
+
+.about-massage-chair{
+    height: auto;
+}
+
+.about-massage-chair h2{
+    font-size: 1.5rem;
+}
+
+.about-massage-chair p{
+    font-size: 0.8rem;
+}
+
+.about-massage-chair h6{
+    line-height: 10%;
+}
+
+.massage-chair-btn{
+    margin-bottom: 5%;
+}
+/*-------------------End massage chair------------*/
+
+
+
+/* ===========Gallary =========== */
+#gallary {
+    height: 100vh;
+}
+.gallary-heading {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10% !important;
+}
+#gallary h4{
+    font-size: 30px;
+    margin: 0;
+}
+
+#gallary h1 {
+    margin-left: 0;
+    font-size: 40px;
+}
+
+/* =========== Gallary end ======= */
+
+
+/* ====contact form====== */
+
+/* ====contact form end====== */
+
+
+
+/*========= footer ============ */
+#footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+}
+
+#footer h3 {
+    font-size: 25px;
+}
+
+.social-icon .fa{
+    font-size: 23px;
+    padding: 10px 20px 20px 0px;
+}
+
+.get-touch {
+    width: 100%;
+    margin-top: 10%;
+}
+
+#footer-bottom h4{
+    font-size: 10px !important;
+}
+
+/*============== footer End ========= */
+
+}
